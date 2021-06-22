@@ -14,13 +14,7 @@ $rs = mysqli_query($dbConn, $sql);
 
 $rows = [];
 
-while ( true ) {
-    $row = mysqli_fetch_assoc($rs);
-
-    if ( $row === null ) {
-        break;
-    }
-
+while ( $row = mysqli_fetch_assoc($rs) ) {
     $rows[] = $row;
 }
 ?>
