@@ -36,7 +36,7 @@ updateDate = NOW(),
 writerName = '홍길동',
 title = '자바스크립트 조건문',
 `body` = '
-# 자바스크립트 변수 선언
+# 자바스크립트 조건문
 ```javascript
 let age = 20;
 if ( age >= 20 ) {
@@ -47,3 +47,18 @@ else {
 }
 ```
 ';
+
+INSERT INTO article
+SET regDate = NOW(),
+updateDate = NOW(),
+writerName = '홍길동',
+title = '자바스크립트 반복문',
+`body` = '
+# 자바스크립트 반복문
+```javascript
+for ( let i = 0; i < 10; i++ ) {
+  console.log(i);
+}
+```
+';
+

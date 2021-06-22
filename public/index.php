@@ -14,16 +14,15 @@ $rs = mysqli_query($dbConn, $sql);
 
 $rows = [];
 
-$rows[0] = mysqli_fetch_assoc($rs); // 2번글
-$rows[1] = mysqli_fetch_assoc($rs); // 1번글
+$rows[] = mysqli_fetch_assoc($rs); // 3번글
+$rows[] = mysqli_fetch_assoc($rs); // 2번글
+$rows[] = mysqli_fetch_assoc($rs); // 1번글
 ?>
 <meta charset="UTF-8">
 
+<?php for ( $i = 0; $i < count($rows); $i++ ) { ?>
 <div>
-    번호 : <?=$rows[0]['id']?><br>
+    번호 : <?=$rows[$i]['id']?><br>
 </div>
 <hr>
-<div>
-    번호 : <?php echo $rows[1]['id']; ?><br>
-</div>
-<hr>
+<?php } ?>
