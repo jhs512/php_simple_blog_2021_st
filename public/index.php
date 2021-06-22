@@ -1,26 +1,20 @@
 <?php
-$article2 = [
-    "id" => 2,
-    "regDate" => "2021-06-20 16:40:01",
-    "title" => "제목2",
-    "body" => "내용2",
-];
+// DB 연결
+$dbConn = mysqli_connect("127.0.0.1", "sbsst", "sbs123414", "php_simple_blog_st") or die("DB ERROR");
 
-$article1 = [
-    "id" => 1,
-    "regDate" => "2021-06-20 16:40:00",
-    "title" => "제목1",
-    "body" => "내용1",
-];
+// DB에게 할 말을 적는다.
+$sql = "
+SELECT *
+FROM article
+ORDER BY id DESC
+";
 
-$articles = [];
+// DB에게 요청하고 응답을 받는다.
+$rs = mysqli_query($dbConn, $sql);
 
-$articles[] = $article1;
-$articles[] = $article2;
+$row = mysqli_fetch_assoc($rs);
+print_r($row);
 
-print_r($articles);
+$row = mysqli_fetch_assoc($rs);
+print_r($row);
 exit;
-
-// echo $변수; exit;
-// print_r($변수); exit;
-// var_dump($변수); exit;
