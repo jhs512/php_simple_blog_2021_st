@@ -20,9 +20,9 @@ $rows[] = mysqli_fetch_assoc($rs); // 1번글
 ?>
 <meta charset="UTF-8">
 
-<?php for ( $i = 0; $i < count($rows); $i++ ) { ?>
+<?php foreach ( $rows as $row ) { ?>
 <div>
-    번호 : <?=$rows[$i]['id']?><br>
+    번호 : <?=$row['id']?><br>
 </div>
 <hr>
 <?php } ?>
