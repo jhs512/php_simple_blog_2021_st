@@ -14,15 +14,22 @@ $rs = mysqli_query($dbConn, $sql);
 
 $rows = [];
 
-$rows[] = mysqli_fetch_assoc($rs); // 3번글
-$rows[] = mysqli_fetch_assoc($rs); // 2번글
-$rows[] = mysqli_fetch_assoc($rs); // 1번글
+while ( true ) {
+    $row = mysqli_fetch_assoc($rs);
+
+    if ( $row === null ) {
+        break;
+    }
+
+    $rows[] = $row;
+}
 ?>
 <meta charset="UTF-8">
 
 <?php foreach ( $rows as $row ) { ?>
 <div>
     번호 : <?=$row['id']?><br>
+    제목 : <?=$row['title']?><br> 
 </div>
 <hr>
 <?php } ?>
