@@ -12,9 +12,18 @@ ORDER BY id DESC
 // DB에게 요청하고 응답을 받는다.
 $rs = mysqli_query($dbConn, $sql);
 
-$row = mysqli_fetch_assoc($rs);
-print_r($row);
+$rows = [];
 
-$row = mysqli_fetch_assoc($rs);
-print_r($row);
-exit;
+$rows[0] = mysqli_fetch_assoc($rs); // 2번글
+$rows[1] = mysqli_fetch_assoc($rs); // 1번글
+?>
+<meta charset="UTF-8">
+
+<div>
+    번호 : <?=$rows[0]['id']?><br>
+</div>
+<hr>
+<div>
+    번호 : <?php echo $rows[1]['id']; ?><br>
+</div>
+<hr>
