@@ -23,12 +23,11 @@
 </head>
 
 <body>
-    <header class="top-bar bg-gray-500 text-white h-20">
+    <header class="top-bar bg-gray-500 text-white h-10">
         <div class="container mx-auto h-full flex">
             <a href="/" class="top-bar__logo flex items-center px-4">
                 <span><i class="far fa-lemon"></i></span>
-                &nbsp;
-                <span class="font-bold">LEMON IT</span>
+                <span class="font-bold">&nbsp;LEMON IT</span>
             </a>
 
             <div class="flex-grow"></div>
@@ -38,22 +37,19 @@
                     <li>
                         <a href="/" class="h-full flex items-center px-4 hover:underline">
                             <span><i class="fas fa-home"></i></span>
-                            &nbsp;
-                            <span class="font-bold">HOME</span>
+                            <span class="font-bold hidden sm:block">&nbsp;HOME</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/jhs512" target="_blank" class="h-full flex items-center px-4 hover:underline">
                             <span><i class="fab fa-github"></i></span>
-                            &nbsp;
-                            <span class="font-bold">GITHUB</span>
+                            <span class="font-bold hidden sm:block">&nbsp;GITHUB</span>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/channel/UCiw6ewVgQkLMmgWjQp1-gKQ" target="_blank" class="h-full flex items-center px-4 hover:underline">
                             <i class="fab fa-youtube"></i>
-                            &nbsp;
-                            <span class="font-bold">YOUTUBE</span>
+                            <span class="font-bold hidden sm:block">&nbsp;YOUTUBE</span>
                         </a>
                     </li>
                 </ul>
