@@ -1,29 +1,36 @@
-<?php
-// DB 연결
-$dbConn = mysqli_connect("127.0.0.1", "sbsst", "sbs123414", "php_simple_blog_st") or die("DB ERROR");
+<!DOCTYPE html>
+<html lang="ko">
 
-// DB에게 할 말을 적는다.
-$sql = "
-SELECT *
-FROM article
-ORDER BY id DESC
-";
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍길동 IT기술 블로그</title>
 
-// DB에게 요청하고 응답을 받는다.
-$rs = mysqli_query($dbConn, $sql);
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-$rows = [];
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-while ( $row = mysqli_fetch_assoc($rs) ) {
-    $rows[] = $row;
-}
-?>
-<meta charset="UTF-8">
+    <!-- 공통 CSS 불러오기 -->
+    <link rel="stylesheet" href="/resource/common.css">
+    <!-- 공통 JS 불러오기 -->
+    <script src="/resource/common.js" defer></script>
+</head>
 
-<?php foreach ( $rows as $row ) { ?>
-<div>
-    번호 : <?=$row['id']?><br>
-    제목 : <?=$row['title']?><br> 
-</div>
-<hr>
-<?php } ?>
+<body>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias enim quam deleniti similique harum omnis ratione vel fuga recusandae reiciendis exercitationem in ipsum error eius, ut eveniet eum ea qui.
+
+    👍 안녕하세요. 저는 홍길동입니다.
+
+    <h1>
+        <i class="fas fa-caret-left"></i> 안녕
+    </h1>
+    <h1>
+        <i class="fas fa-chevron-circle-down"></i>
+        잘가
+    </h1>
+</body>
+
+</html>
