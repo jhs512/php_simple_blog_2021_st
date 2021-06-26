@@ -25,7 +25,7 @@
 <body>
     <header class="top-bar bg-gray-500 text-white h-20">
         <div class="container mx-auto h-full flex">
-            <a href="#" class="top-bar__logo flex items-center">
+            <a href="/" class="top-bar__logo flex items-center px-4">
                 <span><i class="far fa-lemon"></i></span>
                 &nbsp;
                 <span class="font-bold">LEMON IT</span>
@@ -33,9 +33,31 @@
 
             <div class="flex-grow"></div>
 
-            <div class=" bg-red-300">
-                우측 메뉴
-            </div>
+            <nav class="top-bar__menu-box-1">
+                <ul class="flex h-full">
+                    <li>
+                        <a href="/" class="h-full flex items-center px-4 hover:underline">
+                            <span><i class="fas fa-home"></i></span>
+                            &nbsp;
+                            <span class="font-bold">HOME</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jhs512" target="_blank" class="h-full flex items-center px-4 hover:underline">
+                            <span><i class="fab fa-github"></i></span>
+                            &nbsp;
+                            <span class="font-bold">GITHUB</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCiw6ewVgQkLMmgWjQp1-gKQ" target="_blank" class="h-full flex items-center px-4 hover:underline">
+                            <i class="fab fa-youtube"></i>
+                            &nbsp;
+                            <span class="font-bold">YOUTUBE</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 </body>
