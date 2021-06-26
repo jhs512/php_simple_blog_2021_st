@@ -13,6 +13,9 @@
     <!-- 폰트어썸 불러오기 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- 테일윈드 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.4/tailwind.min.css">
+
     <!-- 공통 CSS 불러오기 -->
     <link rel="stylesheet" href="/resource/common.css">
     <!-- 공통 JS 불러오기 -->
@@ -20,17 +23,21 @@
 </head>
 
 <body>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias enim quam deleniti similique harum omnis ratione vel fuga recusandae reiciendis exercitationem in ipsum error eius, ut eveniet eum ea qui.
+    <header class="top-bar bg-gray-500 text-white h-20">
+        <div class="container mx-auto h-full flex">
+            <a href="#" class="top-bar__logo flex items-center">
+                <span><i class="far fa-lemon"></i></span>
+                &nbsp;
+                <span class="font-bold">LEMON IT</span>
+            </a>
 
-    👍 안녕하세요. 저는 홍길동입니다.
+            <div class="flex-grow"></div>
 
-    <h1>
-        <i class="fas fa-caret-left"></i> 안녕
-    </h1>
-    <h1>
-        <i class="fas fa-chevron-circle-down"></i>
-        잘가
-    </h1>
+            <div class=" bg-red-300">
+                우측 메뉴
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
